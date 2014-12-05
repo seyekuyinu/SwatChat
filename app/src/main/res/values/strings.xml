@@ -15,5 +15,10 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="password_hint_again">Enter password again</string>
     <string name="email_hint">Email Address</string>
+    <string name="signup_error_message">Please make sure you enter the correct credentials!</string>
+    <string name="signup_error_title">Oops!</string>
+    <string name="login_error_message">Please make sure you enter the correct credentials!</string>
+    <string name="login_error_title">Oops!</string>
+    <string name="menu_logout_label">Logout</string>
 
 </resources>

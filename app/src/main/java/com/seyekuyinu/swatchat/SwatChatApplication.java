@@ -14,8 +14,5 @@ public class SwatChatApplication extends Application {
         super.onCreate();
         Parse.initialize(this, "CIfQ3eGbwhmAMxLu6SaOHAtHq81BFj2r4ZppX13b", "qpuAOq2LYLtA4P1g5HNZaDAjzaDxWeyp4pb2xLoc");
 
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
     }
 }
