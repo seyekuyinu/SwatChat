@@ -6,11 +6,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="com.seyekuyinu.swatchat.SwatChatApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name=".SwatChatApplication">
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.seyekuyinu.swatchat.MainActivity"
             android:label="@string/app_name"
@@ -29,8 +29,17 @@
         <activity
             android:name="com.seyekuyinu.swatchat.SignUpActivity"
             android:label="@string/title_activity_sign_up"
+            android:parentActivityName="com.seyekuyinu.swatchat.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.seyekuyinu.swatchat.EditFriendsActivity"
+            android:label="@string/title_activity_edit_friends"
             android:screenOrientation="portrait"
-            android:parentActivityName="com.seyekuyinu.swatchat.LoginActivity">
+            android:parentActivityName="com.seyekuyinu.swatchat.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seyekuyinu.swatchat.MainActivity" />
         </activity>
     </application>
 
