@@ -28,7 +28,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+       // requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_login);
 
 
@@ -66,11 +66,11 @@ public class LoginActivity extends Activity {
                 }else{
 
                    //Log In
-                    setProgressBarIndeterminateVisibility(true);
+                   // setProgressBarIndeterminateVisibility(true);
                     ParseUser.logInInBackground(username, password, new LogInCallback() {
                         @Override
                         public void done(ParseUser parseUser, ParseException e) {
-                            setProgressBarIndeterminateVisibility(false);
+                            //setProgressBarIndeterminateVisibility(false);
 
                             if(e == null){
                                 //it worked
